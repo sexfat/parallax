@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="parallax.min.js"></script>
+
+</head>
+
+<body>
+    <section class="section section_01">
+        <h1 style="text-align: center; margin-top: 30px;">第一種視差</h1>
+        <div class="center" id="parallax_area" data-hover-only="false">
+            <div class="box p1 " data-depth="0.8">01</div>
+            <div class="box p2" data-depth="0.4">02</div>
+            <div class="box p3" data-depth="0.2">03</div>
+            <div class="box p4" data-depth="0.1">04</div>
+            <div class="box p5" data-depth="0.9">05</div>
+        </div>
+        <div class="code">
+            <code>
+                <h5>環境安裝</h5>
+                <div>parallax.min.js</div>
+                <div>scripts.js</div><br><br>
+
+
+
+                <div>1. html 如果整個畫布都是感應區應該是false <br>
+                    data-hover-only="false" <br><br></div>
+
+                <div> 2. 物件速度控制 <br>
+                    data-depth="0.8"</div>
+                    <br>
+                <div>3. css屬性可使用 margin 來控制位置</div>
+
+            </code>
+        </div>
+
+
+    </section>
+    <section class="section section_02">
+        <h1 style="text-align: center; margin-top: 30px;">第二種視差</h1>
+        <div class="center" id="parallax_area1" data-hover-only="true">
+            <div class="box p1 " data-depth="0.8">01</div>
+            <div class="box p2" data-depth="0.4">02</div>
+            <div class="box p3" data-depth="0.2">03</div>
+            <div class="box p4" data-depth="0.1">04</div>
+            <div class="box p5" data-depth="0.9">05</div>
+        </div>
+
+        <div class="code">
+            <code>
+
+
+
+                <div>1. html 如果只有區域是感應區 true <br>
+                    data-hover-only="true" <br><br></div>
+                <div> 2. 物件速度控制 <br>
+                    data-depth="0.8"</div>
+                    <br>
+                <div>3. css屬性會被套件蓋掉時，請使用 !important ，把屬性給搶回來</div>
+
+            </code>
+        </div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
